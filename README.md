@@ -1,5 +1,5 @@
 # Sentiment Analysis Programs
-A github repository made to dive into NLP's senteiment analysis capabilities.
+A github repository made to dive into NLP's sentiment analysis capabilities.
 
 # Getting Started
 - Clone the repo or download the zip to get started.
