@@ -5,6 +5,9 @@ A github repository made to dive into NLP's senteiment analysis capabilities.
 - Clone the repo or download the zip to get started!
 
 ## Basic Sentiment Analysis:
+- Input a wesbite link and the program will rate it on a scale from -1 to 1. 1 is deemed as a 'positive' article while -1 is deemed as a 'negative' article.
+
+### Instructions:
 1. Open terminal and navigate to the project folder
 ```zsh
 cd sentiment_analysis
@@ -13,3 +16,26 @@ cd sentiment_analysis
 ```zsh
 pip install -r requirements.txt
 ```
+3. Input website into:
+```python
+url = ''
+```
+4. Run code and generate an outcome.
+
+### Example of a Positive Result (>.5)
+Article title: ""
+Source: CNN
+```python
+url = ''
+```
+
+### Example of a Negative Result (<-.5)
+Article title: ""
+Source: CNN
+```python
+url = ''
+```
+
+
+``test``
+`test`
