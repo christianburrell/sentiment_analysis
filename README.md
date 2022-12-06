@@ -1,5 +1,8 @@
 # Sentiment Analysis Programs
 A github repository made to dive into NLP's sentiment analysis capabilities.
+Two main programs:
+1. Basic Sentiment Analysis
+2. Twitter Sentiment Analysis
 
 # Getting Started
 - Clone the repo or download the zip to get started.
@@ -27,6 +30,15 @@ url = ''
 
 
 `A Positive Result (>.5):`
+
+Article title: ""
+
+Source: CNN
+
+```python
+url = ''
+```
+`A Neutral Result (=0):`
 
 Article title: ""
 
