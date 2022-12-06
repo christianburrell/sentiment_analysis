@@ -25,7 +25,8 @@ url = ''
 
 ### Examples:
 
-#### A Positive Result (>.5):
+
+`A Positive Result (>.5):`
 
 Article title: ""
 
@@ -34,6 +35,7 @@ Source: CNN
 ```python
 url = ''
 ```
+
 
 `A Negative Result (< -.5):`
 
