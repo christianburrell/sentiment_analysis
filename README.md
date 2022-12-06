@@ -2,10 +2,10 @@
 A github repository made to dive into NLP's senteiment analysis capabilities.
 
 # Getting Started
-- Clone the repo or download the zip to get started!
+- Clone the repo or download the zip to get started.
 
 ## Basic Sentiment Analysis:
-- Input a wesbite link and the program will rate it on a scale from -1 to 1. 
+- Program designed for an input of a wesbite link in which the program will rate the link's text on a scale from -1 to 1. 
 - 1 is deemed as a 'positive' article while -1 is deemed as a 'negative' article.
 
 ### Instructions:
