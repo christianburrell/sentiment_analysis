@@ -5,7 +5,7 @@ import spacy
 import asent
 
 #gets article into the program:
-url = 'https://www.cnn.com/2022/11/27/investing/markets-china-lockdowns-intl-hnk/index.html'
+url = ''
 article = Article(url)
 article.download()
 
