@@ -6,7 +6,7 @@ A github repository made to dive into NLP's senteiment analysis capabilities.
 
 ## Basic Sentiment Analysis:
 - Program designed for an input of a wesbite link in which the program will rate the link's text on a scale from -1 to 1. 
-- 1 is deemed as a `'positive'` article while -1 is deemed as a `'negative'` article.
+- 1 is deemed as a **'positive'** article while -1 is deemed as a **'negative'** article.
 
 ### Instructions:
 1. Open terminal and navigate to the project folder
@@ -24,7 +24,7 @@ url = ''
 4. Run code and generate an outcome.
 
 ### Examples:
-`Example of a Positive Result (>.5)`
+`A Positive Result (>.5):`
 
 Article title: ""
 
@@ -34,7 +34,7 @@ Source: CNN
 url = ''
 ```
 
-`Example of a Negative Result (<-.5)`
+`A Negative Result (< -.5):`
 
 Article title: ""
 
@@ -43,3 +43,5 @@ Source: CNN
 ```python
 url = ''
 ```
+
+> This is a test because I want to see what it does
