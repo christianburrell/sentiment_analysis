@@ -24,6 +24,7 @@ url = ''
 4. Run code and generate an outcome.
 
 `Example of a Positive Result (>.5)`
+
 Article title: ""
 
 Source: CNN
@@ -32,7 +33,8 @@ Source: CNN
 url = ''
 ```
 
-### Example of a Negative Result (<-.5)
+`Example of a Negative Result (<-.5)`
+
 Article title: ""
 
 Source: CNN
