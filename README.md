@@ -36,7 +36,6 @@ Source: CNN
 url = ''
 ```
 
-
 `A Negative Result (< -.5):`
 
 Article title: ""
