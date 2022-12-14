@@ -2,7 +2,6 @@ from textblob import TextBlob
 import tweepy
 import sys
 from api_keys.secret import api_key, secret_api_key, access_token, secret_access_token
-import pandas as pd
 
 auth_handler = tweepy.OAuthHandler(consumer_key = api_key, consumer_secret = secret_api_key)
 auth_handler.set_access_token(access_token, secret_access_token)
