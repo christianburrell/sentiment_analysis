@@ -29,33 +29,49 @@ url = ''
 ### Examples:
 
 
-`A Positive Result (>.5):`
+`A Positive Result (>0):`
 
-Article title: ""
+Article title: "Thousands in Argentina welcome back triumphant World Cup winners, Messi"
 
-Source: CNN
+Source: NBC
 
 ```python
-url = ''
+url = 'https://www.nbcnews.com/news/latino/thousands-argentina-welcome-messi-winners-world-cup-rcna62539'
 ```
+
+```txt
+Textblob sentiment: 0.22727272727272724
+Asent sentiment: neg=0.0 neu=0.351 pos=0.049 compound=0.2515
+```
+
 `A Neutral Result (=0):`
 
-Article title: ""
+Article title: "How earthquakes are measured"
 
 Source: CNN
 
 ```python
-url = ''
+url = 'https://www.cnn.com/2022/12/20/weather/how-earthquakes-measured-xpn'
 ```
 
-`A Negative Result (< -.5):`
+```txt
+Textblob sentiment: 0.018749999999999996
+Asent sentiment: neg=0.0 neu=0.0 pos=0.0 compound=0.0
+```
 
-Article title: ""
+`A Negative Result (<0):`
+
+Article title: "Holiday Shoppers Are Cutting Back. And That’s a Bad Sign For the Economy"
 
 Source: CNN
 
 ```python
-url = ''
+url = 'https://time.com/6241570/retail-sales-holiday-shopping-economy/'
+```
+
+```txt
+Textblob sentiment: -0.10571428571428569
+Asent sentiment: neg=0.126 neu=0.757 pos=0.117 compound=0.0408
 ```
 
 ## Twitter Sentiment Analysis:
@@ -67,12 +83,12 @@ url = ''
 ```python
 search_term = 'COVID -filter:retweets -filter:replies'
 tweet_amount = 100
-end = str(datetime.now() - timedelta(days=7)) #can only produce tweets up to a maximum of 7 days
+end = str(datetime.now() - timedelta(days=7)) #can only produce tweets up to a maximum of 7 days. edit number after 'days = '
 
 tweets = tweepy.Cursor(api.search_tweets, q=search_term, lang = 'en', since = start, until=end, tweet_mode = "extended").items(tweet_amount)
 ```
 
--- Currently returns a result of:
+Currently returns a result of:
 ```txt
 This is textblob's polarity: 0.05335560706654452
 This is asent's polarity: neg=0.098 neu=0.57 pos=0.096 compound=-0.003

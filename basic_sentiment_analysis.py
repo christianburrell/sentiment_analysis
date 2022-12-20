@@ -16,19 +16,19 @@ article.parse()
 article.nlp()
 
 #print full article text:
-#text = article.text
-#print(text)
+text = article.text
+#print(f'This is the full text: {text}')
 
 #print summary of the article (what's actually important for analysis)
-text = article.summary
-#print(text)
+summary = article.summary
+#print(f"This is the text's summary {summary}")
 
 #passes the string into textblob object
-blob = TextBlob(text)
+blob = TextBlob(summary)
 
 #creates sentiment value with values closer to -1 being negative and values closer to 1 being positive
 blob_sentiment = blob.sentiment.polarity
-print(blob_sentiment)
+print(f'Textblob sentiment: {blob_sentiment}')
 
 #SPACY SENTIMENT ANALYSIS W/ ASENT API
 
@@ -39,6 +39,6 @@ nlp.add_pipe('sentencizer')
 # add the rule-based sentiment model
 nlp.add_pipe("asent_en_v1")
 
-doc = nlp(text)
+doc = nlp(summary)
 spacy_sentiment = doc._.polarity
-print(spacy_sentiment)
+print(f'Asent sentiment: {spacy_sentiment}')

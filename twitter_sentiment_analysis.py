@@ -13,11 +13,11 @@ api = tweepy.API(auth_handler)
 
 '''Editable Queries'''
 #add search term and amount of tweets you want to recieve
-search_term = 'COVID -filter:retweets -filter:replies' # if you don't want retweets or replies: -filter:retweets -filter:replies
-tweet_amount = 100
-end = (datetime.now() - timedelta(days=7)).strftime("%Y-%m-%d") # edit number after days = 
+search_term = '' # if you don't want retweets or replies: -filter:retweets -filter:replies
+tweet_amount = 10
+end = (datetime.now() - timedelta(days=7)).strftime("%Y-%m-%d") # edit number after 'days = '
 
-tweets = tweepy.Cursor(api.search_tweets, q=search_term, lang = 'en', until = end, tweet_mode = "extended").items(tweet_amount)
+tweets = tweepy.Cursor(api.search_tweets, q=search_term, lang = 'en', tweet_mode = "extended").items(tweet_amount)
 
 tweet_list = ''
 
