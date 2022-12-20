@@ -67,8 +67,7 @@ url = ''
 ```python
 search_term = 'COVID -filter:retweets -filter:replies'
 tweet_amount = 100
-start = '2022-12-19'
-end = '2022-12-12'
+end = str(datetime.now() - timedelta(days=7)) #can only produce tweets up to a maximum of 7 days
 
 tweets = tweepy.Cursor(api.search_tweets, q=search_term, lang = 'en', since = start, until=end, tweet_mode = "extended").items(tweet_amount)
 ```

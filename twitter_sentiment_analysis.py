@@ -3,7 +3,7 @@ import spacy
 import asent
 import tweepy
 import re
-from datetime import datetime
+from datetime import datetime, timedelta
 from api_keys.secret import api_key, secret_api_key, access_token, secret_access_token
 
 auth_handler = tweepy.OAuthHandler(consumer_key = api_key, consumer_secret = secret_api_key)
@@ -13,12 +13,11 @@ api = tweepy.API(auth_handler)
 
 '''Editable Queries'''
 #add search term and amount of tweets you want to recieve
-search_term = '' # if you don't want retweets or replies: -filter:retweets -filter:replies
-tweet_amount = 10
-start = ''
-end = ''
+search_term = 'COVID -filter:retweets -filter:replies' # if you don't want retweets or replies: -filter:retweets -filter:replies
+tweet_amount = 100
+end = str(datetime.now() - timedelta(days=7))
 
-tweets = tweepy.Cursor(api.search_tweets, q=search_term, lang = 'en', tweet_mode = "extended").items(tweet_amount)
+tweets = tweepy.Cursor(api.search_tweets, q=search_term, lang = 'en', until =end, tweet_mode = "extended").items(tweet_amount)
 
 tweet_list = ''
 
