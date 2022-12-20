@@ -72,4 +72,8 @@ end = str(datetime.now() - timedelta(days=7)) #can only produce tweets up to a m
 tweets = tweepy.Cursor(api.search_tweets, q=search_term, lang = 'en', since = start, until=end, tweet_mode = "extended").items(tweet_amount)
 ```
 
-- Will return a result of:
+-- Currently returns a result of:
+```txt
+This is textblob's polarity: 0.05335560706654452
+This is asent's polarity: neg=0.098 neu=0.57 pos=0.096 compound=-0.003
+```
